@@ -11,4 +11,3 @@ export VISUAL=/usr/bin/nvim
 SILENT_JAVA_OPTIONS="$JDK_JAVA_OPTIONS"
 unset JDK_JAVA_OPTIONS
 alias java='java "$SILENT_JAVA_OPTIONS"'
-export OPENAI_API_KEY=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

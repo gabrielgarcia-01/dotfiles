@@ -111,7 +111,7 @@
   },
   "custom/lock": {
     "tooltip": false,
-    "on-click": "swaylock --image ~/dotfiles/wallpapers/cat.png",
+    "on-click": "swaylock --screenshots",
     "format": "   "
   },
   "custom/power-menu": {
