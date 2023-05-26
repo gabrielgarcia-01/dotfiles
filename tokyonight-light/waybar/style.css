@@ -1,0 +1,115 @@
+@import "/home/gabriel/.config/waybar/tokyonight-light.css";
+* {
+  border-radius: 0;
+  font-family: Material Design Icons, JetBrains Mono;
+  font-size: 16px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @text;
+}
+
+tooltip {
+	background: @base;
+  color: @text;
+	border-radius: 15px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: @blue;
+}
+
+#workspaces {
+  background: @base;
+  border-radius: 15px;
+}
+
+#workspaces button {
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  min-width: 0;
+  color: @text;
+}
+
+#workspaces button.active {
+    color: @blue;
+}
+
+#workspaces button.urgent {
+  color: @base;
+  background: @red;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  background: @base;
+  border-color: @base;
+  border-radius: 10px;
+	color: @blue;
+}
+
+#battery, #pulseaudio, #clock, #cpu, #network, #memory, #disk, #backlight, #workspaces, #custom-launcher, #custom-lock, #custom-power-menu {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: @base;
+}
+
+#network {
+  color: @sky;
+}
+
+#clock {
+  color: @mauve;
+  border-radius: 15px;
+}
+
+#pulseaudio {
+  color: @mauve;
+}
+
+#battery {
+  color: @green;
+  border-radius:0px 15px 15px 0px;
+}
+
+#cpu {
+  color: @red;
+}
+
+#memory {
+  color: @green;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#disk {
+  color: @mauve;
+}
+
+#backlight {
+  color: @yellow;
+}
+#custom-lock {
+  border-radius: 15px 0px 0px 15px;
+  color: @red;
+}
+#custom-launcher {
+  color: @sky;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#custom-power-menu {
+  color: @peach;
+  border-radius: 0px 15px 15px 0px;
+}
+#tray {
+  background: @base;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}

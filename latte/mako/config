@@ -1,0 +1,20 @@
+sort=-time
+layer=overlay
+font=JetBrainsMono 14
+width=320
+height=500
+border-size=3
+border-radius=10
+border-color=#DC8A78
+background-color=#EFF1F5
+text-color=#4C4F69
+icons=1
+max-icon-size=96
+default-timeout=5000
+ignore-timeout=0
+text-alignment=center
+
+[urgency=high]
+border-color=#D20F39
+
+# vim:ft=conf

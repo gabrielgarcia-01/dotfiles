@@ -1,0 +1,41 @@
+# Font settings
+font=JetBrains Mono
+font-size=24
+
+# Settings
+ignore-empty-password
+disable-caps-lock-text
+indicator-caps-lock
+
+show-failed-attempts
+
+indicator-radius=120
+indicator-thickness=20
+
+clock
+
+effect-blur=7x5
+
+# Colors
+bs-hl-color=#ffffff
+
+key-hl-color=#1E1E2E
+
+inside-color=#1E1E2E
+inside-clear-color=#1E1E2E
+inside-caps-lock-color=#1E1E2E
+inside-ver-color=#A6E3A1
+inside-wrong-color=#f38ba8
+
+ring-clear-color=#CBA6F7
+ring-caps-lock-color=#F38BA8
+ring-ver-color=#A6E3A1
+ring-color=#F5E0DC
+ring-wrong-color=#D4738E
+
+text-color=#F5E0DC
+text-clear-color=#1E1E2E
+
+caps-lock-key-hl-color=#F38BA8
+
+# vim:ft=conf
