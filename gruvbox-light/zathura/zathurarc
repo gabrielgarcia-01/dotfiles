@@ -1,7 +1,0 @@
-set recolor true
-set recolor-keephue true
-set selection-clipboard "clipboard"
-set window-title-page true
-set font "JetBrains Mono"
-
-include gruvbox-light

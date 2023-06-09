@@ -1,0 +1,130 @@
+{
+  "position": "top",
+  "layer": "top",
+  "modules-left": [
+    "custom/launcher",
+    "wlr/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "memory",
+    "disk",
+    "cpu",
+    "backlight",
+    "network",
+    "pulseaudio",
+    "battery",
+    "custom/lock",
+    "custom/power-menu",
+    "tray"
+  ],
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": false,
+    "sort-by-numbers": false,
+    "format-icons": {
+      "default": "",
+      "active": "",
+      "urgent": ""
+    }
+  },
+  "clock": {
+    "format": "    {:%a %d %I:%M} ",
+    "on-click": "gnome-calendar"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 10
+    },
+    "format": " {icon} {capacity}% ",
+    "format-warning": " {icon} {capacity}% ",
+    "format-critical": " {icon} {capacity}% ",
+    "format-charging": "  {capacity}% ",
+    "format-plugged": "  {capacity}% ",
+    "format-alt": "{icon} {time} ",
+    "format-full": "   ",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "tooltip-format": "{time}"
+  },
+  "network": {
+    "format-wifi": "  {essid} ",
+    "format-ethernet": "   Disconnected ",
+    "format-disconnected": "  Disconnected ",
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "on-click": "pavucontrol",
+    "format": " {icon} {volume}% ",
+    "format-muted": "   Muted ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "default": [
+        "",
+        "",
+        " "
+      ]
+    }
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "   {usage}% ",
+    "max-length": 10
+  },
+  "memory": {
+    "interval": 30,
+    "format": "  {}% ",
+    "format-alt": "  {used:0.1f}GB "
+  },
+  "disk": {
+    "interval": 30,
+    "format": "  {percentage_free}% ",
+    "format-alt": "  {percentage_used}% ",
+    "tooltip-format": "{path}"
+  },
+  "backlight": {
+    "device": "eDP-1",
+    "format": " {icon}{percent}% ",
+    "tooltip-format": " {percent} ",
+    "format-icons": [
+      "󱩎 ",
+      "󱩏 ",
+      "󱩐 ",
+      "󱩑 ",
+      "󱩒 ",
+      "󱩓 ",
+      "󱩔 ",
+      "󱩕 ",
+      "󱩖 ",
+      "󰛨 "
+    ]
+  },
+  "custom/lock": {
+    "tooltip": false,
+    "on-click": "swaylock --screenshots",
+    "format": "   "
+  },
+  "custom/power-menu": {
+    "format": "⏻ ",
+    "on-click": "wlogout"
+  },
+  "custom/launcher": {
+    "format": "    ",
+    "on-click": "wofi"
+  },
+  "tray": {
+    "spacing": 7
+  }
+}
+// vim:ft=jsonc

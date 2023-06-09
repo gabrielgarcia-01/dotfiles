@@ -53,6 +53,7 @@ return {
           end
         end,
       },
+      "HiPhish/nvim-ts-rainbow2",
     },
     keys = {
       { "<c-space>", desc = "Increment selection" },
@@ -93,6 +94,11 @@ return {
           node_decremental = "<bs>",
         },
       },
+      rainbow = {
+        enable = true,
+        extended_mode = true,
+        max_file_lines = nil,
+      },
     },
     ---@param opts TSConfig
     config = function(_, opts)
@@ -126,5 +132,9 @@ return {
   -- haskell
   {
     "mrcjkb/haskell-tools.nvim",
+  },
+  -- yuck
+  {
+    "elkowar/yuck.vim",
   },
 }

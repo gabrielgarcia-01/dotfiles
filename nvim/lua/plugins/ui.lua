@@ -12,7 +12,12 @@ return {
     "catppuccin/nvim",
     config = function()
       require("catppuccin").setup({
+        background = {
+          light = "latte",
+          dark = "mocha",
+        },
         transparent_background = true,
+        term_colors = true,
         styles = {
           comments = { "italic" },
           conditionals = { "italic" },
@@ -20,6 +25,9 @@ return {
         },
         integrations = {
           mini = true,
+          which_key = true,
+          ts_rainbow2 = true,
+          markdown = true,
         },
       })
     end,
@@ -27,7 +35,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin",
     },
   },
   {
@@ -44,12 +52,6 @@ return {
         sidebars = "transparent",
         floats = "dark",
       },
-    },
-  },
-  {
-    "sainnhe/gruvbox-material",
-    opts = {
-      transparent_background = true,
     },
   },
   {
@@ -90,12 +92,12 @@ return {
               },
             },
             { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
-            -- { "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
+            { "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
             -- stylua: ignore
-            -- {
-            --   function() return require("nvim-navic").get_location() end,
-            --   cond = function() return package.loaded["nvim-navic"] and require("nvim-navic").is_available() end,
-            -- },
+            {
+              function() return require("nvim-navic").get_location() end,
+              cond = function() return package.loaded["nvim-navic"] and require("nvim-navic").is_available() end,
+            },
           },
           lualine_x = {
           -- stylua: ignore
@@ -111,14 +113,14 @@ return {
             color = fg("Constant") ,
           },
             { require("lazy.status").updates, cond = require("lazy.status").has_updates, color = fg("Special") },
-            -- {
-            --   "diff",
-            --   symbols = {
-            --     added = icons.git.added,
-            --     modified = icons.git.modified,
-            --     removed = icons.git.removed,
-            --   },
-            -- },
+            {
+              "diff",
+              symbols = {
+                added = icons.git.added,
+                modified = icons.git.modified,
+                removed = icons.git.removed,
+              },
+            },
           },
           lualine_y = {
             { "progress", separator = " ", padding = { left = 1, right = 0 } },

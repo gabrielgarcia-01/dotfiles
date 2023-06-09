@@ -1,6 +1,6 @@
 sort=-time
 layer=overlay
-font=JetBrainsMono 14
+font=Iosevka 14
 width=320
 height=500
 border-size=3

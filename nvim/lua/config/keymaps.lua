@@ -10,3 +10,5 @@ vim.g.maplocalleader = " "
 -- Twilight and zen modes
 map("n", "<leader>ut", "<CMD>Twilight<CR>", { desc = "Twilight Toggle" })
 map("n", "<leader>uz", "<CMD>ZenMode<CR>", { desc = "Zen Mode Toggle" })
+map("n", "<leader>uL", "<CMD>set background=light<CR>", { desc = "Light mode" })
+map("n", "<leader>uD", "<CMD>set background=dark<CR>", { desc = "Dark mode" })
