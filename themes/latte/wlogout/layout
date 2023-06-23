@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock --image ~/dotfiles/wallpapers/cat.svg",
+    "action" : "swaylock --image ~/dotfiles/wallpapers/rosewater-cat.png",
     "text" : "Lock",
     "keybind" : "l"
 }

@@ -1,0 +1,2 @@
+timeout 300 'notify-send -t 30000 "Suspending in 30 seconds." "Close me to stop!"'
+timeout 330 'swaylock --image ~/dotfiles/wallpapers/cat.png'
